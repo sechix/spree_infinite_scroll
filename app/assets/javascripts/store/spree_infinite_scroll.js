@@ -1,13 +1,13 @@
 //= require store/spree_frontend
 
 $(function() {
-  $('#content nav.pagination').hide();
+  $('nav.pagination').hide();
   $('#products').infinitescroll({
-    navSelector: "#content nav.pagination",
-    nextSelector: "#content nav.pagination a[rel=next]",
-    itemSelector: "#content #products li",
+    navSelector: "nav.pagination",
+    nextSelector: "nav.pagination a[rel=next]",
+    itemSelector: "#products li",
     loading: {
-      msgText  : "Loading...",
+      msgText  : "cargando...",
       finishedMsg: ""  
     }
   });
